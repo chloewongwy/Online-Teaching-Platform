@@ -1,0 +1,331 @@
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+a:hover {
+    color: #29BBCC;
+    text-decoration: none;
+}
+
+h2, p { color: #666666; }
+
+
+
+#tm-video {
+    width: 100%;
+    height: auto;
+}
+
+.tm-bg-black {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.tm-bg-gray { background-color: #F4F4F4; }
+.tm-text-primary { color: #3399CC; }
+.tm-text-secondary { color: #3CAFAF; }
+
+.tm-nav-link {
+    color: white;
+    font-size: 1.4rem;    
+}
+
+#tm-main-nav .nav-item .nav-link { border-bottom: 1px solid transparent; }
+
+#tm-main-nav .nav-item.active .nav-link,
+#tm-main-nav .nav-item:hover .nav-link {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+
+
+
+
+#tm-video-control-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.tm-content-container {
+    max-width: 1422px;
+    padding-top: 80px;
+    padding-bottom: 35px;
+}
+
+
+
+
+/*Video detail page*/
+
+.tm-video-title { font-size: 2.5rem; }
+.tm-share-box { 
+    font-size: 1.4rem; 
+    padding: 3rem;
+}
+.tm-share-box-title { font-size: 1.4rem; }
+
+.tm-bg-white {
+    background-color: white;
+    border: 1px solid #CDCECF;
+    border-radius: 5px;
+}
+
+.tm-share-button {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.tm-share-button:last-child { margin-right: 0; }
+.tm-text-link { color: #3399CC; }
+
+.tm-likes-box,
+.tm-btn-download {
+    width: 280px;
+    height: 60px;
+}
+
+.tm-likes-box { padding-top: 12px; }
+.tm-video-description-box { max-width: 920px; }
+.tm-text-gray { color: #6F7071; }
+
+.tm-fixed-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+    background-color: #666;
+}
+
+#tm-fixed-header-bg { height: 450px; }
+.tm-fixed-header-1 { background-image: url(../img/video-detail-1.jpg); }
+.tm-fixed-header-2 { background-image: url(../img/about-1.jpg); }
+.tm-fixed-header-3 { background-image: url(../img/contact-1.jpg); }
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+.tm-liked-icon { display: none; }
+.tm-not-liked-icon { display: inline-block; }
+.tm-liked-icon, .tm-not-liked-icon { margin-top: 3px; }
+.tm-liked .tm-liked-icon { display: inline-block; }
+.tm-liked .tm-not-liked-icon { display: none; }
+
+
+/* class outline */
+		
+.tm-class-outline  {
+	margin-top: 30px;
+	padding: 5px;
+}
+
+.tm-free-episodes, .tm-qrcode {
+	padding: 5px;
+}
+
+
+.tm-class-outline-title {
+	margin-bottom: 10px;
+}
+
+.tm-class-outline-list-container {
+	height: 280px;
+	overflow-y: scroll;
+}
+
+.tm-class-outline-list , .tm-free-episodes-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tm-class-outline-list li, .tm-free-episodes-list li {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+
+.tm-free-episodes-list li a {
+	color: #3399CC;
+	display: block;
+	padding: 5px;
+	transition: all 0.3s ease;
+}
+
+.tm-class-outline-list li a {
+	display: block;
+	padding: 5px;
+	color: #666;
+	transition: all 0.3s ease;
+}
+
+.tm-class-outline-list li a:hover {
+	background-color: #F4F4F4;
+	color: #29BBCC;
+	text-decoration: none;
+}
+
+
+/*like*/	
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+}
+
+.tm-liked a{
+	color: #666;
+}
+
+.tm-liked a:hover{
+	color: #29BBCC;
+}
+
+.tm-video-title {
+	margin: 0;
+}
+
+.tm-likes-box {
+	justify-self: end;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: block;
+	}
+
+	.tm-likes-box {
+		margin-top: 10px; /* Decreased from 20px */
+	}
+}
+
+
+
+/* comment */
+
+form {
+	margin-top: 20px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+/* background color */
+.tm-class-outline-title {
+	border-bottom: 1px solid #ccc;
+}
+
+.container-fluid {
+	background-color: #f2f2f2;
+}
+
+.tm-class-outline {
+	background-color: #fff;
+}
+
+
+/* text color */
+.mb-5.tm-video-title {
+	color: black;
+}
+
+.mb-4 {
+	color: black;
+}
+
+/* list */		
+
+.tm-free-episodes {
+	background-color: white;
+}
+
+.tm-free-episodes-title {
+	border-bottom: 1px solid #ccc;
+}
+
+/* QRcode */
+
+.tm-qrcode {
+	background-color: white;
+	margin-top: 30px;
+}
+
+.qrcode-image{
+	width: 100px;
+	height: 100px;		
+}
+
+/* icon */
+
+.tm-video-control-button {
+	float: right;
+}
+
+/* video */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+@media (min-width: 992px) {
+    #tm-main-nav .nav-item { margin: 20px 40px; }
+    .navbar-expand-lg .navbar-nav .nav-link { padding: 8px 0px; }
+    .navbar-expand-lg .navbar-collapse { justify-content: flex-end; }
+}
+
+
+@media (max-width: 991px) {
+    #tm-video {
+        width: 888px;
+        height: 500px;
+    }
+
+    .tm-logo-container {
+        height: 160px;
+        width: 250px;
+    }
+
+
+}
+
